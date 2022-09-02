@@ -1,0 +1,69 @@
+<html> <head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <title>moving robots</title> <link rel=StyleSheet href="styles.css" type="text/css" media=screen> </head> <p> 
+<span class="big">Using CAT(0) Cube Complexes to Move Robots</span><br> 
+<span class="strong">Federico Ardila, Hanner Bastidas, Cesar Ceballos, John Guo</span><br> 
+<span class="strong">August, 2016</span><br> </p>
+<br>
+</head>  
+
+
+
+
+
+<a href="robotsintunnel.pdf">
+The configuration space of a robotic arm in a tunnel.</a> <br> &nbsp; &nbsp; &nbsp; &nbsp; Federico Ardila, Hanner Bastidas, Cesar Ceballos, John Guo
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; (Submitted.) <br>
+<br>
+
+
+<a href="robotsfpsac.pdf">
+The configuration space of a robotic arm in a tunnel of width 2.</a> <br> &nbsp; &nbsp; &nbsp; &nbsp; Federico Ardila, Hanner Bastidas, Cesar Ceballos, John Guo
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; (FPSAC 2016 Proceedings, Discrete Mathematics and Theoretical Computer Science, to appear.) <br>
+<br>
+
+<a href="Robots/fpsacposter.pdf">FPSAC 2016 poster.</a> <br> 
+<br>
+
+<span class = "strong">Abstract.</span> 
+We study the motion of a robotic arm inside a rectangular tunnel. We prove that the configuration space of all possible positions of the robot is a CAT(0) cubical complex. This allows us to use techniques from geometric group theory to find the optimal way of moving the arm from one position to another. We also compute the diameter of the configuration space, that is, the longest distance between two positions of the robot.<br>
+
+<br>
+<br>
+
+
+<span class = "strong">Software.</span> This page contains the implementation of our algorithm to move a robotic arm in a rectangular tunnel optimally. To execute the file, you must first download Python 2.7. Be sure to install the packages numpy and matplotlib. Now edit the file with IDLE and go to run followed by run module. This is  where the program will ask for the conditions of the robotic arm. <br>
+
+First the program will request a positive integer grid height, followed by the start state and end state of identical length arms which originate at the lower left corner of the grid. A state of the robotic arm is taken as a string consisting of 'r', 'u', or 'd' such that there are no consecutive 'u' and 'd' entries. If this condition fails for any entered state or an entered state exits the grid the program will print out what caused the error and ask for a new state. Otherwise the program will then compute and return the number of steps, the number of individual moves, the optimal sequence of states from the start to the end state, and the corresponding animation. To adjust the rate of the animation, go to line 706 in the file and change the number associated to 'interval'. <br> <br>
+
+
+You may download the Python code <a href="Robots/movingrobotarms.py">here</a>.
+
+<br>
+<br>
+
+
+<span class = "strong">Sample input and output.</span>
+
+<br>
+
+Here is a sample input and output for a snake of length 23 in a tunnel of width 3; this is one of the running examples from the paper "The configuration space of a robotic arm in a tunnel ".
+
+<figure>
+  <img src="Robots/example.png" alt="A sample input and output for a snake of length 23 in a tunnel of width 3" height="150">
+</figure>
+
+The program also produces an <a href="Robots/23animation.mp4">animation</a> of the robot moving optimally between these positions:
+<br>
+
+<video width="1000" height="250" autoplay>
+  <source src="Robots/23animation.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+
+<br>
+ </body>  </html>  
