@@ -1,0 +1,78 @@
+/*  Stylesheet  */	
+
+body, p, ul, dl {
+	font-family:Helvetica, sans-serif;
+	font-size:14px;
+	color:#000000}
+ 
+p.linklist {
+	font-family:Helvetica, sans-serif;
+	font-size:18px;
+	font-weight: bold;
+	margin: 0px 3px 6px 3px;
+	color:#909090}
+	
+a:link {color:#909090;
+       font-family: Helvetica, sans-serif;
+       font-size: 18px;
+       text-decoration: none;
+}
+ 
+SPAN {
+	font-family:Helvetica, sans-serif;
+	font-size:14px;}
+ 
+.big {
+	font-family:Helvetica, sans-serif;
+	font-size:26px;
+	font-weight: bold;
+	color:#202020}
+
+
+
+h2 {
+	font-family:Helvetica, sans-serif;
+	font-size:18px;
+	font-weight: bold;
+	color:#202020}
+
+.fakelink {
+	font-family:Helvetica, sans-serif;
+	font-size:18px;
+	color:#909090}
+		
+.strong {
+	font-family:Helvetica, sans-serif;
+	font-size:18px;
+	font-weight: bold;
+	color:#ff6600}
+	
+.medium {
+	font-family:Helvetica, sans-serif;
+	font-size:14px;
+	font-weight: bold;
+	color:#202020}
+	
+.small {
+	font-family:Helvetica, sans-serif;
+	font-size:11px;
+	color:#cccccc}
+	
+.ital {
+	font-family:Helvetica, sans-serif;
+	font-size:14px;
+	font-style: italic;
+	color:#cccccc}
+	
+.mediumital {
+	font-family:Helvetica, sans-serif;
+	font-size:14px;
+	font-style: italic;
+	font-weight: bold;
+	color:#cccccc}
+
+a:visited {color:#909090;}
+
+a:active {color:#909090;}
+
+a:hover {color:#00ccff;}
