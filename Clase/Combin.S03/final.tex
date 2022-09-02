@@ -1,0 +1,301 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage{amssymb}
+
+\setlength{\oddsidemargin}{-0.3in}
+\setlength{\textwidth}{6.8in}
+%\setlength{\evensidemargin}{.15in}
+\setlength{\topmargin}{-0.65in} \setlength{\textheight}{9.2in}
+
+\pagestyle{empty}
+
+\begin{document}
+
+
+\begin{center}
+{\bf {\Large{Examen Final de Combinatoria Algebraica}}}\\
+\medskip
+\medskip
+\medskip
+\end{center}
+\large
+
+\begin{center}
+\textsc{Instrucciones.}
+\end{center}
+
+\begin{itemize}
+ \item El examen dura desde el
+Mi{\'e}rcoles 23 de Abril a las 4pm hasta el Mi{\'e}rcoles 30 de
+Abril a las 4pm. Durante esa semana, usted puede consultar
+cualquier fuente: apuntes, libros, bibliotecas, internet, etc. Sin
+embargo, no puede hablar sobre el examen ni mostr{\'a}rselo a
+nadie distinto del profesor.
+
+\item La idea de este examen es aprender. Mucho. Para eso hay que
+trabajar. Mucho. El examen no es demasiado dif{\'\i}cil, pero
+s{\'\i} es demasiado largo. Reserve bastante tiempo para
+resolverlo y no lo deje para {\'u}ltima hora!
+
+\item Por {\'u}ltimo, cu{\'e}nteme aproximadamente cu{\'a}nto
+tiempo le dedic{\'o} a este examen. Esto no es para generar
+competencia entre ustedes, ni tendr{\'a} ning{\'u}n efecto sobre
+su nota; es s{\'o}lo para mi informaci{\'o}n.
+
+\item Mucha suerte!
+
+\end{itemize}
+
+
+
+\medskip
+
+%----------------------------comienzo enunciado
+
+\begin{enumerate}
+
+
+\item \textsc{C\'{o}mo Contar los Racionales}
+
+Una {\bf representaci{\'o}n pseudobinaria} de $n$ es una
+partici{\'o}n de $n$ en potencias de dos, de modo que cada sumando
+aparece m{\'a}ximo dos veces. Por ejemplo, las representaciones
+pseudobinarias de $10$ son $8+2 , 8+1+1 , 4+4+2 , 4+4+1+1$ y
+$4+2+2+1+1$. Sea $a(n)$ el n\'{u}mero de representaciones
+pseudobinarias de $n$.
+
+\begin{enumerate}
+\item Encuentre una f{\'o}rmula para la funci\'{o}n generatriz
+$A(x) = \sum a(n) x^n$.
+
+\item Demuestre que $A(x) = (1+x+x^2)A(x^2)$. Comparando los
+coeficientes de $x^{2n}$ y de $x^{2n+1}$ en los dos lados de esta
+ecuaci\'{o}n, concluya que $a(2n) = a(n) + a(n-1)$ y que $a(2n+1)
+= a(n)$.
+
+\item D{\'e} una demostraci\'{o}n combinatoria de las dos
+igualdades de la parte (b).
+
+\end{enumerate}
+
+Considere el {\'a}rbol infinito con ra{\'\i}z, tal que cada
+v{\'e}rtice tiene dos hijos. Empezando con la ra{\'\i}z, y bajando
+piso por piso de izquierda a derecha, escriba en los v{\'e}rtices
+del {\'a}rbol las fracciones $a(0)/a(1)\, , \,  a(1)/a(2) \, , \,
+a(2)/a(3), \ldots$ en ese orden. Observe que los hijos izquierdo y
+derecho del v{\'e}rtice con n\'{u}mero $a(n-1)/a(n)$ tienen
+n\'{u}meros $a(2n-1)/a(2n)$ y $a(2n)/a(2n+1)$ respectivamente.
+
+Por lo tanto, la ra{\'\i}z del {\'a}rbol tiene el n{\'u}mero
+$1/1$, y los hijos izquierdo y derecho de un v{\'e}rtice numerado
+$i/j$ se numeran $i/(i+j)$ e $(i+j)/j$, respectivamente. Esto
+determina la numeraci{\'o}n de todo el {\'a}rbol.
+
+\begin{enumerate}
+\item[(d)] Demuestre que las fracciones escritas en los
+v{\'e}rtices del {\'a}rbol son irreducibles.
+
+(Sugerencia: Use inducci{\'o}n sobre el piso en el que se
+encuentra el v\'{e}rtice.)
+
+\item[(e)] Demuestre que toda fracci{\'o}n irreducible $a/b$
+aparece en alg{\'u}n v{\'e}rtice del {\'a}rbol.
+
+(Sugerencia: Use inducci{\'o}n sobre $a+b$. Considere dos casos:
+que la fracci{\'o}n $a/b$ sea mayor o menor que $1$.)
+
+\item[(f)] Demuestre que ninguna fracci{\'o}n aparece en m{\'a}s
+de un v{\'e}rtice del {\'a}rbol.
+
+(Sugerencia: Use un argumento an{\'a}logo al de la parte (e).)
+
+\item[(g)] Concluya que $a(0)/a(1)\, , \,  a(1)/a(2) \, , \,
+a(2)/a(3), \ldots$ es una lista completa y sin repeticiones de
+todos los n{\'u}meros racionales positivos.
+
+\end{enumerate}
+
+
+
+\newpage
+
+
+%---------------------------------------------------------------------------------------------------------------------
+
+
+\item \textsc{Ordenes de Intervalos Unitarios}
+
+Considere $n$ intervalos cerrados $I_1, \ldots, I_n$ de longitud
+$1$ en la recta real. Sea $I_k = [a_k, a_k+1]$. Estos intervalos
+definen un poset $P$ de la siguiente manera: $I_i < I_j$ si el
+intervalo $I_i$ est\'{a} estrictamente a la izquierda del
+intervalo $I_j$; es decir, si $a_i+1 <a_j$. Los posets que se
+pueden obtener de esta manera se conocen como {\bf {\'o}rdenes de
+intervalos unitarios}.
+
+\begin{enumerate}
+\item Recuerde que el n\'{u}mero de sucesiones de $n$ $\,1$'s y
+$n$ $\,-1$'s cuyas sumas parciales son no negativas es igual al
+{\bf n\'{u}mero de Catalan}, $C_n = \frac{1}{n+1}{2n \choose n}$.
+Encuentre una biyecci\'{o}n entre estas sucesiones y los
+{\'o}rdenes de $n$ intervalos unitarios.
+
+\item Demuestre que $\mathbf{2} + \mathbf{2}$ y $\mathbf{3} +
+\mathbf{1}$ no son {\'o}rdenes de intervalos unitarios. Concluya
+que un orden de intervalos unitarios no puede contener a
+$\mathbf{2} + \mathbf{2}$ o a $\mathbf{3} + \mathbf{1}$ como
+subposet.
+
+\item Demuestre que todos los posets libres de $\mathbf{2} +
+\mathbf{2}$ y $\mathbf{3} + \mathbf{1}$ son {\'o}rdenes de
+intervalos unitarios.
+
+(Sugerencia: Use inducci\'{o}n sobre el n\'{u}mero de elementos de
+$P$. Considere un elemento maximal $z$ de $P$. Sea $A$ el conjunto
+de elementos de $P$ menores que $z$, y $B = P-A$. Demuestre que
+$B$ es una anticadena. Ahora considere un conjunto $\cal I$ de
+intervalos que representan el poset $P-z$, y a\~{n}ada un
+intervalo $I_z$ que corresponda al elemento $z$.
+Desafortunadamente, para que ${\cal I} \cup I_z$ represente a $P$,
+puede ser necesario cambiar un poco la posici\'{o}n de los
+intervalos de $\cal I$.)
+\end{enumerate}
+
+
+\newpage
+%---------------------------------------------------------------------------------------------------------------------
+\item \textsc{El M{\'e}todo de Campos Finitos}
+
+Sea $\cal A$ un arreglo de hiperplanos en $\Bbb R^n$, tal que las
+ecuaciones que definen los hiperplanos tienen coeficientes
+enteros. El objetivo de este problema es encontrar un m{\'e}todo
+para calcular el polinomio caracter{\'\i}stico $\chi_{\cal A}(q)$.
+
+La ecuaci{\'o}n de cada hiperplano se puede considerar como una
+ecuaci{\'o}n sobre el campo finito $\Bbb F_q$ de $q$ elementos,
+donde $q$ es un primo. Las $n$-tuplas que son soluciones de esta
+ecuaci{\'o}n forman un hiperplano en el espacio $\Bbb F_q^n$. De
+este modo obtenemos un arreglo de hiperplanos ${\cal A}_q$ en
+$\Bbb F_q^n$.
+
+\begin{enumerate}
+
+\item Explique brevemente por qu\'{e} los posets de
+intersecci\'{o}n $L_{\cal A}$ y $L_{{\cal A}_q}$ no siempre son
+isomorfos. Sin embargo, explique por qu\'{e}, si $q$ es
+suficientemente grande, $L_{\cal A} \cong L_{{\cal A}_q}$.
+
+\item Sea $q$ un primo suficientemente grande. Explique por
+qu{\'e} la intersecci{\'o}n $x$ contiene exactamente
+$q^{\mathrm{dim }\,\, x}$ de los puntos de $\Bbb F_q^n$. Sea
+$$
+f(y) = \sum_{x \geq y \,\, \mathrm{en} \,\, L_{{\cal A}_q}} \mu(y,
+x) q^{\mathrm{dim }\,\, x},
+$$
+de modo que $\chi_{\cal A}(q) = f(\hat{0}).$ >Qu{\'e} cuenta
+$f(y)$?
+
+(Sugerencia: Use la f{\'o}rmula de inversi{\'o}n de M{\"o}bius.)
+
+
+Concluya que $\chi_{\cal A}(q)$ es el n{\'u}mero de puntos de
+$\Bbb F_q^n$ que no est{\'a}n sobre ning{\'u}n hiperplano de
+${\cal A}_q$. Este es el {\bf m{\'e}todo de campos finitos para
+calcular polinomios caracter{\'\i}sticos}.
+
+\item Use el m{\'e}todo de campos finitos para calcular el
+polinomio caracter{\'\i}stico del arreglo
+$$
+{\cal H}_n: \qquad x_i = 0 \qquad (1 \leq i \leq n).
+$$
+
+\item Use el m{\'e}todo de campos finitos para calcular el
+polinomio caracter{\'\i}stico del {\bf arreglo trenza}
+$$
+{\cal B}_n: \qquad x_i = x_j \qquad (1 \leq i < j \leq n).
+$$
+
+\end{enumerate}
+
+
+
+
+\newpage
+%---------------------------------------------------------------------------------------------------------------------
+
+\item \textsc{El Arreglo de Catalan}
+
+El {\bf arreglo de Catalan} es el siguiente arreglo de $3{n
+\choose 2}$ hiperplanos en $\Bbb R^n$:
+$$
+{\cal C}_n: \qquad x_i - x_j = -1, 0, 1 \qquad (1 \leq i < j \leq
+n).
+$$
+\begin{enumerate}
+\item Dibuje el arreglo ${\cal C}_3$. (Para simplificar el dibujo,
+dibuje la proyecci{\'o}n sobre el plano $x_1+x_2+x_3 = 0$, como
+hicimos en clase.)
+>Cu{\'a}ntas regiones tiene? >Cu{\'a}ntas regiones acotadas tiene?
+Usando estos dos c\'{a}lculos y el teorema de Zaslavsky, calcule
+el polinomio caracter{\'\i}stico $\chi_{{\cal C}_3}(q)$.
+
+\item Se tiene una colecci{\'o}n de $m$ puntos dispuestos
+alrededor de un c{\'\i}rculo. Demuestre que el n{\'u}mero de
+formas de colorear $k$ de ellos de rojo, de modo que no haya dos
+puntos rojos consecutivos, es $f(m,k) = \frac{m}{m-k} {m-k \choose
+k}$.
+
+(Sugerencia: Es m{\'a}s f{\'a}cil demostrar que $(m-k)f(m,k) = m
+{m-k \choose k}$.)
+
+ \item Use el m\'{e}todo de campos finitos para concluir que
+$$
+\chi_{{\cal C}_n}(q) =
+q(q-n-1)(q-n-2)(q-n-3)\cdots(q-2n+2)(q-2n+1).
+$$
+
+\item Use el teorema de Zaslavsky para concluir que ${\cal C}_n$
+tiene $n! \, C_n$ regiones.
+
+
+\item Recuerde que el arreglo trenza ${\cal B}_n$ tiene $n!$
+regiones; cada una de ellas corresponde a un ordenamiento de las
+variables $x_1, \ldots, x_n$. El arreglo de Catalan contiene a los
+hiperplanos del arreglo trenza; por simetr{\'\i}a, los hiperplanos
+restantes parten cada una de estas regiones en $C_n$ regiones
+m{\'a}s peque{\~n}as. Observe esto en su dibujo del caso $n=3$.
+
+Concentremos nuestra atenci{\'o}n en la regi{\'o}n $x_1 \leq x_2
+\leq \cdots \leq x_n$ de ${\cal B}_n$. El arreglo ${\cal C}_n$
+divide a esta regi{\'o}n en $C_n$ regiones m{\'a}s peque{\~n}as.
+Encuentre una biyecci{\'o}n entre estas regiones y los {\'o}rdenes
+de $n$ intervalos unitarios.
+
+
+\end{enumerate}
+
+
+\end{enumerate}
+
+\vspace{1cm}
+
+\noindent Cada problema tiene un valor de $1.5$ puntos, para un
+total posible de $6.0$. La distribuci{\'o}n de los puntos en cada
+problema es la siguiente.
+
+\begin{itemize}
+
+\item Problema 1: 0.2, 0.2, 0.4, 0.2, 0.2, 0.2, 0.1.
+
+\item Problema 2: 0.5, 0.3, 0.7.
+
+\item Problema 3: 0.5, 0.6, 0.2, 0.2.
+
+\item Problema 4: 0.2, 0.4, 0.3, 0.1, 0.5.
+
+\end{itemize}
+
+%----------------------------fin enunciado
+
+
+
+\end{document}

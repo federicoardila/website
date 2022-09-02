@@ -1,0 +1,71 @@
+/*  Stylesheet  */	
+
+body, p, ul, dl {
+	font-family:Verdana, sans-serif;
+	font-size:12px;
+	color:#cccccc}
+ 
+p.linklist {
+	font-family:Verdana, sans-serif;
+	font-size:12px;
+	font-weight: bold;
+	margin: 0px 3px 6px 3px;
+	color:#cccccc}
+	
+a:link {color:#cccccc;
+       font-family: Verdana, sans-serif;
+       font-size: 12px;
+       /*text-decoration: none;*/
+}
+ 
+SPAN {
+	font-family:Verdana, sans-serif;
+	font-size:12px;}
+ 
+.big {
+	font-family:Verdana, sans-serif;
+	font-size:20px;
+	font-weight: bold;
+	color:#ffffff}
+	
+h2 {
+	font-family:Verdana, sans-serif;
+	font-size:14px;
+	font-weight: bold;
+	color:#ffffff}
+	
+.strong {
+	font-family:Verdana, sans-serif;
+	font-size:14px;
+	font-weight: bold;
+	color:#cccccc}
+	
+.medium {
+	font-family:Verdana, sans-serif;
+	font-size:12px;
+	font-weight: bold;
+	color:#ffffff}
+	
+.small {
+	font-family:Verdana, sans-serif;
+	font-size:9px;
+	color:#cccccc}
+	
+.ital {
+	font-family:Verdana, sans-serif;
+	font-size:12px;
+	font-style: italic;
+	color:#cccccc}
+	
+.mediumital {
+	font-family:Verdana, sans-serif;
+	font-size:12px;
+	font-style: italic;
+	font-weight: bold;
+	color:#cccccc}
+
+a:visited {color:#cccccc;}
+
+a:active {color:#cccccc;}
+
+a:hover {color:#ffffff;}

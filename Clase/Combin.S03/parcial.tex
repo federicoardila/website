@@ -1,0 +1,119 @@
+\documentclass[letterpaper,10pt]{article}
+%\usepackage{amssymb}
+
+\setlength{\oddsidemargin}{-0.3in}
+\setlength{\textwidth}{6.8in}
+%\setlength{\evensidemargin}{.15in}
+\setlength{\topmargin}{-0.65in} \setlength{\textheight}{9.2in}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+{\bf {\Large{Parcial de Combinatoria Algebraica}}}\\
+{\large Marzo 4,
+2003 }\\[.25in]
+\end{center}
+
+
+\large
+
+%\noindent {\sc Instrucciones: }{Los problemas requieren
+%demostraci\'{o}n o justificaci\'{o}n completa. Respuestas sin
+%justificaci\'{o}n no obtendr\'{a}n un puntaje superior al 10\%. No
+%se permite el uso de calculadoras, textos o apuntes. }
+
+\smallskip
+
+%\noindent {\sc Tiempo M\'aximo: 2 Horas. }
+
+%\smallskip
+\begin{center}
+\noindent {\sc Problemas }
+\end{center}
+
+%----------------------------comienzo enunciado
+
+\begin{enumerate}
+
+\item Decimos que una permutaci{\'o}n $a_1 \ldots a_n$ es {\bf
+alternante} si $a_1 < a_2 > a_3 < a_4 > \cdots$. Sea $E_n$ el
+n{\'u}mero de permutaciones alternantes de $[n]$.
+
+\begin{enumerate}
+\item Demuestre que
+$$
+2E_{n+1} = \sum_{k=0}^n {n \choose k} E_k E_{n-k}.
+$$
+
+\item Concluya que
+$$
+\sum_{n \geq 0} E_n \frac{x^n}{n!} = \tan x + \sec x.
+$$
+
+\item Use el resultado de la parte (b) para dar una
+demostraci{\'o}n combinatoria de la identidad
+$$
+1 + \tan^2 x = \sec^2 x.
+$$
+
+\end{enumerate}
+
+\item Sean $n$ y $k$ enteros positivos. Sea $a_k(n)$ el n{\'u}mero
+de particiones de $n$ en partes que no son m{\'u}ltiplos de $k$.
+Sea $b_k(n)$ el n{\'u}mero de particiones de $n$ donde ninguna
+parte aparece $k$ o m{\'a}s veces.
+
+Demuestre que $a_k(n) = b_k(n)$.
+
+\item Sea $P$ un poset finito y sea $k$ el tama{\~n}o m{\'a}ximo
+de una anticadena de $P$. Sean $A$ y $B$ dos anticadenas de $P$ de
+$k$ elementos. Sean $C$ el conjunto de elementos maximales y $D$
+el conjunto de elementos minimales del poset $A \cup B$ (con el
+orden inducido por $P$). Demuestre que $C$ y $D$ son anticadenas
+de $P$ de $k$ elementos.
+
+\item Encuentre el n{\'u}mero de posets $P$ de $n$ elementos tales
+que, para cada entero positivo $i$ con $1 \leq i \leq n-1$, $P$
+tiene exactamente dos ideales de $i$ elementos. Dibuje los posets
+$P$ y $J(P)$ que se obtienen en el caso $n = 4$.
+
+\item
+
+Sea $P$ un poset de $n$ elementos numerado naturalmente. Si $f_k$
+es el n{\'u}mero de cadenas de $J(P)$ de $k+1$ elementos, el
+$f$-polinomio de $J(P)$ es:
+$$
+f_{J(P)}(x) = \sum_k f_kx^k.
+$$
+Podemos ver las extensiones lineales de $P$ como permutaciones de
+$[n]$. Si $w_k$ es el n{\'u}mero de extensiones lineales de $P$
+con $k$ descensos, el $W$-polinomio de $P$ es:
+$$
+W_P(x) = \sum_k w_kx^k.
+$$
+Demostrar que
+$$
+W_P\left(\frac{x}{x+1}\right) = \frac{f_{J(P)}(x)}{(x+1)^n}.
+$$
+>Qu{\'e} dice esta afirmaci{\'o}n cuando $x \rightarrow \infty$?
+
+
+
+{\bf Nota}. Una numeraci{\'o}n natural de $P$ es una
+numeraci{\'o}n de los elementos de $P$ con los n{\'u}meros $1,
+\ldots, n$ tal que, si $i < j$ en el poset, entonces el n{\'u}mero
+asignado al elemento $i$ es menor que el n{\'u}mero asignado a
+$j$.
+
+
+
+\end{enumerate}
+
+
+%----------------------------fin enunciado
+
+
+
+\end{document}
